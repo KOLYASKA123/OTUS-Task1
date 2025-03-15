@@ -17,6 +17,7 @@ target_include_directories(
 )
 
 target_link_libraries(helloworld_cli PRIVATE helloworld)
+include_directories(${CMAKE_BINARY_DIR} ${CMAKE_SOURCE_DIR})
 
 
 install(TARGETS helloworld_cli RUNTIME DESTINATION bin)
