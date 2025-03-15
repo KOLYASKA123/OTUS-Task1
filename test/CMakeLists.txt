@@ -6,12 +6,7 @@ set(Sourses
     ExampleTests.cpp
 )
 
-set(Headers
-    ../lib.h
-    ../build/version.h
-)
-
-add_executable(${This} ${Sourses} ${Headers})
+add_executable(${This} ${Sourses})
 
 
 target_link_libraries(${This} PUBLIC
